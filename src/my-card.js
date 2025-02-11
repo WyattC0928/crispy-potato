@@ -15,6 +15,7 @@ export class MyCard extends LitElement {
   constructor() {
     super();
     this.title = "My card";
+    this.image = "https://draftwire.usatoday.com/wp-content/uploads/sites/72/2025/01/2193204480.jpg?w=1000&h=600&crop=1";
   }
 
   static get styles() {
@@ -26,12 +27,15 @@ export class MyCard extends LitElement {
   }
 
   render() {
-    return html`<div>${this.title}</div>`;
+    return html`<div>
+      <img src="${this.image}" alt="{this.title}" />
+      ${this.title}</div>`;
   }
 
   static get properties() {
     return {
       title: { type: String },
+      image: { type: String },
     };
   }
 }
