@@ -18,6 +18,13 @@
     }
     polaris-chip {
       margin: 16px;
+      --polaris-chip-background-color: azure;
+    }
+    a {
+      margin: 16px;
+      color: red;
+      background-color: azure;
+      padding: 50px;
     }
   </style>
   <title>polaris-chip / my-card</title>
@@ -32,12 +39,27 @@
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card image="Drew Allar Hands on Head" title = "drew allar"></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
-  <my-card></my-card>
 
+  <my-card
+    title = "Drew Allar"
+    image = "https://draftwire.usatoday.com/wp-content/uploads/sites/72/2025/01/2193204480.jpg?w=1000&h=600&crop=1"
+    link = "https://gopsusports.com/sports/football/roster/player/drew-allar">
+  </my-card>
+
+  <my-card 
+  title="Trace McSorely"
+  image="https://encrypted-tbn2.gstatic.com/licensed-image?q=tbn:ANd9GcRcJuYhSUxi3ufxoY-sTVkqmM-dOD-rBp1BNbOAYtrOJzs5oeM9TK7BYneo_HUw-TIYl1l2A4zQlMcSO_4"
+  link="https://gopsusports.com/sports/football/roster/player/trace-mcsorley"
+  fancy
+  description="Trace McSorely led Penn State to a Big Ten Championship in 2016.">
+</my-card>
+
+<my-card 
+  title="Sean Clifford"
+  image="https://upload.wikimedia.org/wikipedia/commons/2/24/Sean_Clifford.jpg"
+  link="https://gopsusports.com/sports/football/roster/player/sean-clifford"
+  description="Sean Clifford led Penn State to the Rose Bowl in 2023">
+</my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
